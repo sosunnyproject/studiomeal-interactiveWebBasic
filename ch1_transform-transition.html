@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interactive Web</title>
+        <link rel="stylesheet" href="css/reset.css"> 
+        <style>
+            .box-container {
+                display: flex;
+            }
+            .box {
+                background-color: rgba(255, 255, 0, 0.7);
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+
+                /* 애니메이션 효과가 더해짐 */
+                /* "숫자값"에 변화가 있을 때 변하는 그 중간 과정을 애니메이션으로 보여준다고 생각하면 됨 */
+                transition: 1s linear;
+                transition: 1s cubic-bezier(0.51, 0.19, 0, 0.87);
+                transition-delay: 1s;
+                transition-duration: 2s;
+
+                transition: 0.5s; /* width 100->200px  가는 과정 */
+            }
+
+            /* https://developer.mozilla.org/ko/docs/Web/CSS/transform */
+            .box:hover {
+                width: 200px; /* width 100->200px  가는 과정, auto 이면 안됨. "숫자값"! */
+                background-color:rgba(255, 0 , 255, 0.7);
+                font-size: 30px;
+
+                transform: scale(2); /* transform 다른 박스의 위치에 영향을 주지 않음.*/
+                /* width: 200px; */
+                /* height: 200px; */
+                /* width height 값을 직접 바꾸면 옆의 box 들의 위치가 밀려남.*/
+
+                transform: scale(2) rotate(15deg);
+                transform: skew(30deg);
+                transform: skewY(-15deg);
+
+                transform: translate(30px, 10px); /* x-axis, y-axis move */
+                transform: translateX(30px);
+                transform: translateY(-20px);
+
+                transform: scale(1.5);
+                transform-origin: right bottom;
+                transform-origin: 50% 0%; 
+
+
+            }
+        </style>   
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis labore ab, dignissimos quod consequatur quos officia minima sit possimus, omnis quibusdam reprehenderit odio praesentium culpa eveniet aliquam soluta consequuntur, eum inventore impedit eos dolores dolor, porro! Harum, vero, quod? Porro quia, consectetur? Esse exercitationem quas pariatur hic autem quis ad quidem rem. Necessitatibus exercitationem repudiandae, sequi alias eum deserunt itaque cum optio. Vitae magnam, officiis iure necessitatibus, sequi quo exercitationem molestias est veniam rerum facere. Distinctio ut aliquam, dolores reprehenderit blanditiis magni corporis obcaecati quibusdam necessitatibus quo quasi, unde quis commodi facere omnis quia perspiciatis harum ipsa nostrum. Doloribus, a.
+        </p>
+        <div class="box-container">
+            <div class="box">a</div>
+            <div class="box">b</div>
+            <div class="box">c</div>
+            <div class="box">d</div>
+            <div class="box">e</div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis labore ab, dignissimos quod consequatur quos officia minima sit possimus, omnis quibusdam reprehenderit odio praesentium culpa eveniet aliquam soluta consequuntur, eum inventore impedit eos dolores dolor, porro! Harum, vero, quod? Porro quia, consectetur? Esse exercitationem quas pariatur hic autem quis ad quidem rem. Necessitatibus exercitationem repudiandae, sequi alias eum deserunt itaque cum optio. Vitae magnam, officiis iure necessitatibus, sequi quo exercitationem molestias est veniam rerum facere. Distinctio ut aliquam, dolores reprehenderit blanditiis magni corporis obcaecati quibusdam necessitatibus quo quasi, unde quis commodi facere omnis quia perspiciatis harum ipsa nostrum. Doloribus, a.
+        </p>
+    </body>
+</html>
