@@ -26,7 +26,7 @@ studiomeal 일분코딩 인터렉티브웹 강의 따라하기
 1. [animation-direction](https://developer.mozilla.org/ko/docs/Web/CSS/animation-direction)
 
 ```css
-* Single animation */
+/* Single animation */
 animation-direction: normal;
 animation-direction: reverse;
 animation-direction: alternate;
@@ -43,7 +43,9 @@ animation-direction: unset;
 ```
 
 2. [animation-fill-mode](https://developer.mozilla.org/ko/docs/Web/CSS/animation-fill-mode)
+
 - 애니메이션 오브젝트의 마지막 위치를 정해줄 수 있음.
+
 ```css
 /* 속성 종류 */
 /* Single animation */
@@ -57,3 +59,23 @@ animation-fill-mode: none, backwards;
 animation-fill-mode: both, forwards, none;
 ```
 
+3. Gif <<< Svg 애니메이션 사용 이유
+
+- svg 알파 채널 사용이 가능해서 깔끔
+- gif 는 투명도 조절을 못하는 단점
+- 코드로 움직임을 제어할 수 있다.
+
+```css
+
+animation: spaceship-ani 1s infinite;
+animation: spaceship-ani 1s infinite steps(17);
+animation: spaceship-ani 1s infinite reverse steps(17);
+
+```
+
+4. 추가 설명
+
+<figure style="display: block; margin: 0 auto; text-align: center">
+<img src="images/-2550px.PNG" width="80%">
+<figcaption>keyframe: background-position -2550px 인 이유</figcaption>
+</figure>

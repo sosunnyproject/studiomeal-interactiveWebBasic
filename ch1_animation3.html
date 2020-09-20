@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interactive Web</title>
+        <link rel="stylesheet" href="css/reset.css"> 
+        <style>
+            body{
+                background-color: black;
+            }
+            @keyframes spaceship-ani{
+                /* animation 시작점, 끝점 */
+                /* from { } 은 생략 가능 */
+                from{
+
+                } to {
+                  background-position: -2550px 0;
+
+                }
+            }
+           .spaceship{
+               width: 150px;
+               height: 150px;
+               animation: spaceship-ani 1s infinite;
+               animation: spaceship-ani 1s infinite steps(17);
+               animation: spaceship-ani 1s infinite reverse steps(17);
+               /* 5100px (total width) / 300px (sqaure-size) = 17 spaceship square images in a file */
+               background: url('assets/1_csstransform_animation/images/sprite_spaceship.png') no-repeat 0 0 / auto 150px;
+           }
+        </style>   
+    </head>
+    <body>
+        <h1>Interactive Animation using Image File</h1>
+        <div class="spaceship"></div>
+    </body>
+</html>
