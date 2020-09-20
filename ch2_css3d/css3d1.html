@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interactive Web App: CSS 3D </title>
+
+        <link rel="stylesheet" href="css/reset.css"> 
+        <style>
+             .world{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80vw;
+                height: 80vh;
+                background: palegoldenrod;
+
+                /* world 를 3d공간으로 만들어주는 원근감 속성 */
+                /* 시야 시점으로부터의 원근감 구현 */
+                /* perspective: 500px; */
+
+            }
+            .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 200px;
+                border-radius: 0.3em;  /* 현재 엘리먼트에 비례함*/
+                font-size: 2rem; /* 루트 엘리먼트 -  html -에 비례함 */
+                background: red;
+                margin:1em;
+
+                transform: rotateY(40deg);
+                /* 모든 엘리먼트 같은 원근감 거리에 있는 것처럼 표현 */
+                transform: perspective(500px) rotateY(40deg);
+            }
+           
+        </style>   
+    </head>
+    <body>
+        <div class="world">
+            <div class="card">Hello</div>
+            <div class="card">Hello</div>
+            <div class="card">Hello</div>
+        </div> 
+    </body>
+</html>
