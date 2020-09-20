@@ -108,3 +108,11 @@ animation: spaceship-ani 1s infinite reverse steps(17);
 - card-side-front 는 정면을 바라보고 있고, card-side-back 은 기본 설정이 뒤집혀있다.
   - 그래야지 `mouse hover` 발생시, 카드 전체가 `transform: rotateY(180deg)` 할 때 back 이 뒤집어지지 않고 정면을 바라보도록 해준다.
 - card-side 에서 `backface-visibility: hidden` 속성을 설정해서 front, back 각자의 뒷면이 안보이도록 처리해줘야 한다.
+
+6. css 3d 3: 다양한 브라우저 호환성
+- internet explorer 에서는 `preserve-3d` 적용이 불가능하다
+	- card 클래스를 없앤다
+	- card-side 에 모양 css 를 다 적용시킨다
+	- front, back 이 따로 놀게 된다.
+	- card-side-front 는 0에서 180도 회전
+	- card-side-back 은 180도에서 360도 회전하도록 hover css 를 각각 지정해준다. 
