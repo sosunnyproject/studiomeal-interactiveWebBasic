@@ -10,12 +10,12 @@ studiomeal 일분코딩 인터렉티브웹 강의 따라하기
 
 <figure style="display: block; margin: 0 auto; text-align: center">
 <img src="images/transition-inspector.PNG" width="80%">
-<figcaption>css: transform</figcaption>
+<figcaption  style="color: gray; font-size: 10px">css: transform</figcaption>
 </figure>
 
 <figure style="display: block; margin: 0 auto; text-align: center">
 <img src="images/animation-inspector.PNG" width="80%">
-<figcaption>css: transition</figcaption>
+<figcaption  style="color: gray; font-size: 10px">css: transition</figcaption>
 </figure>
 
 
@@ -77,7 +77,7 @@ animation: spaceship-ani 1s infinite reverse steps(17);
 
 <figure style="display: block; margin: 0 auto; text-align: center">
 <img src="images/-2550px.PNG" width="80%">
-<figcaption>keyframe: background-position -2550px 인 이유</figcaption>
+<figcaption style="color: gray; font-size: 10px">keyframe: background-position -2550px 인 이유</figcaption>
 </figure>
 
 ## CSS 3D 
@@ -90,7 +90,7 @@ animation: spaceship-ani 1s infinite reverse steps(17);
 3. card 앞 뒤를 만들어주고 위치를 고정하기 위해, wrapper 포지션을 relative로 잡는다. 부모 element 의 포지션이 static (포지션의 디폴트 값) 이 아니어야지, 자식 엘리먼트의 포지션을 absolute 로 설정할 수 있다.
 <figure style="display: block; margin: 0 auto; text-align: center">
 <img src="images/card-position.PNG" width="80%">
-<figcaption>card-side front & back : position 설명 그림</figcaption>
+<figcaption  style="color: gray; font-size: 10px">card-side front & back : position 설명 그림</figcaption>
 </figure>
 
 4. 3d 효과는 자식의 자식엘리먼트에까지 영향을 미치지 못함. 한단계 아래까지만 적용되므로 주의해야함.
@@ -99,7 +99,7 @@ animation: spaceship-ani 1s infinite reverse steps(17);
 
 <figure style="display: block; margin: 0 auto; text-align: center">
 <img src="images/3deffect.PNG" width="80%">
-<figcaption>world - card - card side 엘리먼트</figcaption>
+<figcaption  style="color: gray; font-size: 10px">world - card - card side 엘리먼트</figcaption>
 </figure>
 
 
